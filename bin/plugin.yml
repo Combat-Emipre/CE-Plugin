@@ -1,0 +1,26 @@
+name: 11C Plugin
+version: 0.4.1
+author: AGod Plays, Under, 11CDevTeam
+main: com.github.underplayer97.P11C.Main
+description: The official 11C plugin!
+
+commands:
+  about:
+   aliases: [abt]
+   description: Information of the 11C plugin
+   
+  fly:
+   description: Allow Flight
+
+  website:
+   description: Link to 11C's Official Website
+ 
+  CHelp:
+   aliases: [ch]
+   description: Information of the 11C's Commands
+
+  credits:
+   description: Who worked on 11C Plugin
+
+  discord:
+   description: 11C's Official Discord
