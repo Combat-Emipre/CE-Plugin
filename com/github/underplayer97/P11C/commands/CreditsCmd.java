@@ -28,7 +28,7 @@ public class CreditsCmd implements CommandExecutor{
 	
 	Player p = (Player) sender;
 		
-	if (p.hasPermission("info.use")) {
+	if (p.hasPermission("P11C.credits")) {
 		p.sendMessage("Credits: 11C Development team, 11C Java Development team");
 			
 		return true;

@@ -21,7 +21,7 @@ public class AboutCmd implements CommandExecutor{
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (!(sender instanceof Player)){
 			sender.sendMessage("Plugin Name: 11C Plugin "
-					+ "Plugin Version: 0.5.0 "
+					+ "Plugin Version: 0.6.0 "
 					+ "Hope you have a fun time!");
 			return true;
 		}
@@ -30,15 +30,15 @@ public class AboutCmd implements CommandExecutor{
 	
 	Player p = (Player) sender;
 		
-	if (p.hasPermission("info.use")) {
+	if (p.hasPermission("P11C.about")) {
 		p.sendMessage("Plugin Name: 11C Plugin "
-				+ "Plugin Version: 0.5.0 "
+				+ "Plugin Version: 0.6.0 "
 				+ "Hope you have a fun time!");
 			
 		return true;
 	} else {
 		p.sendMessage("Plugin Name: 11C Plugin "
-				+ "Plugin Version: 0.5.0 "
+				+ "Plugin Version: 0.6.0 "
 				+ "Hope you have a fun time!");
 	}
 	return false;

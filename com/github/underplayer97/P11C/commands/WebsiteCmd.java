@@ -28,7 +28,7 @@ public class WebsiteCmd implements CommandExecutor{
 	
 	Player p = (Player) sender;
 		
-	if (p.hasPermission("info.use")) {
+	if (p.hasPermission("P11C.Web")) {
 		p.sendMessage("Link to website: https://11c.org/");
 			
 		return true;

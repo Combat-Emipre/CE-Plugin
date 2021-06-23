@@ -27,7 +27,7 @@ public class FlyCmd implements CommandExecutor{
 		
 		Player p = (Player) sender;
 		
-		if (p.hasPermission("system.fly")) {
+		if (p.hasPermission("P11C.fly")) {
 			if (p.isFlying()) {
 				
 				p.setAllowFlight(false);

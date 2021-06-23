@@ -28,7 +28,7 @@ public class DiscordCmd implements CommandExecutor{
 	
 	Player p = (Player) sender;
 		
-	if (p.hasPermission("info.use")) {
+	if (p.hasPermission("P11C.discord")) {
 		p.sendMessage("11C's Official Discord: https://discord.gg/VXDza8eUMZ");
 			
 		return true;
