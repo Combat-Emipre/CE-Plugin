@@ -20,9 +20,9 @@ public class AboutCmd implements CommandExecutor{
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (!(sender instanceof Player)){
-			sender.sendMessage("Plugin Name: 11C Plugin"
-					+ "Plugin Version: 0.6.4"
-					+ "Hope you have a fun time!");
+			sender.sendMessage("Plugin Name: 11C Plugin \r\n"
+					+ "Plugin Version: 0.7.1 \r\n"
+					+ "Hope you have a fun time! \r\n");
 			return true;
 		}
 			
@@ -31,15 +31,15 @@ public class AboutCmd implements CommandExecutor{
 	Player p = (Player) sender;
 		
 	if (p.hasPermission("P11C.about")) {
-		p.sendMessage("Plugin Name: 11C Plugin"
-				+ "Plugin Version: 0.6.4"
-				+ "Hope you have a fun time!");
+		p.sendMessage("Plugin Name: 11C Plugin \r\n"
+				+ "Plugin Version: 0.7.1 \r\n"
+				+ "Hope you have a fun time! \r\n");
 			
 		return true;
 	} else {
-		p.sendMessage("Plugin Name: 11C Plugin"
-				+ "Plugin Version: 0.6.4"
-				+ "Hope you have a fun time!");
+		p.sendMessage("Plugin Name: 11C Plugin \r\n"
+				+ "Plugin Version: 0.7.1 \r\n"
+				+ "Hope you have a fun time! \r\n");
 	}
 	return false;
 		

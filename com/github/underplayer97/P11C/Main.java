@@ -6,6 +6,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.github.underplayer97.P11C.Listeners.JoinListener;
+import com.github.underplayer97.P11C.Listeners.LeaveListener;
 import com.github.underplayer97.P11C.commands.AboutCmd;
 import com.github.underplayer97.P11C.commands.CreditsCmd;
 import com.github.underplayer97.P11C.commands.DiscordCmd;
@@ -16,6 +17,7 @@ import com.github.underplayer97.P11C.commands.GmsCmd;
 import com.github.underplayer97.P11C.commands.GmspCmd;
 import com.github.underplayer97.P11C.commands.HelpCmd;
 import com.github.underplayer97.P11C.commands.WebsiteCmd;
+import com.github.underplayer97.P11C.commands.YoutubeCmd;
 
 public class Main extends JavaPlugin implements Listener {
 	
@@ -58,6 +60,8 @@ public class Main extends JavaPlugin implements Listener {
 		
 		new HelpCmd(this);
 		
+		new YoutubeCmd(this);
+		
 		//Gamemode
 		
 		new GmsCmd(this);
@@ -71,6 +75,7 @@ public class Main extends JavaPlugin implements Listener {
 		//Listeners
 		
 		new JoinListener(this);
+		new LeaveListener(this);
 	}
 	
 
