@@ -14,21 +14,21 @@ public class HelpCmd implements CommandExecutor{
 	
 	public HelpCmd(Main plugin) {
 		this.plugin = plugin;
-		plugin.getCommand("Chelp").setExecutor(this);
+		plugin.getCommand("chelp").setExecutor(this);
 	}
 	
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (!(sender instanceof Player)){
-			sender.sendMessage("About: Information of 11C's Plugin\r\n"
-					+ "Fly: Allow Flight\r\n"
-					+ "CHelp: Information of 11C's Commands\r\n"
-					+ "Website: Link to 11C's Official Website\r\n"
-					+ "Discord: Link to 11C's Official Website\r\n"
-					+ "Credits: Who worked on 11C Plugin \r\n"
-					+ "GMS: Switches your gamemode to survival \r\n"
-					+ "GMSP: Switches your gamemode to spectator \r\n"
-					+ "GMC: Switches your gamemode to creative \r\n"
+			sender.sendMessage("About: Information of 11C's Plugin"
+					+ "Fly: Allow Flight"
+					+ "CHelp: Information of 11C's Commands"
+					+ "Website: Link to 11C's Official Website"
+					+ "Discord: Link to 11C's Official Discord"
+					+ "Credits: Who worked on 11C Plugin"
+					+ "GMS: Switches your gamemode to survival"
+					+ "GMSP: Switches your gamemode to spectator"
+					+ "GMC: Switches your gamemode to creative"
 					+ "GMAD: Switches your gamemode to adventure");
 			return true;
 		}
@@ -37,29 +37,29 @@ public class HelpCmd implements CommandExecutor{
 	
 	Player p = (Player) sender;
 		
-	if (p.hasPermission("P11C.Help")) {
-		p.sendMessage("About: Information of 11C's Plugin\r\n"
-				+ "Fly: Allow Flight\r\n"
-				+ "CHelp: Information of 11C's Commands\r\n"
-				+ "Website: Link to 11C's Official Website\r\n"
-				+ "Discord: Link to 11C's Official Website\r\n"
-				+ "Credits: Who worked on 11C Plugin \r\n"
-				+ "GMS: Switches your gamemode to survival \r\n"
-				+ "GMSP: Switches your gamemode to spectator \r\n"
-				+ "GMC: Switches your gamemode to creative \r\n"
+	if (p.hasPermission("P11C.help")) {
+		p.sendMessage("About: Information of 11C's Plugin"
+				+ "Fly: Allow Flight"
+				+ "CHelp: Information of 11C's Commands"
+				+ "Website: Link to 11C's Official Website"
+				+ "Discord: Link to 11C's Official Discord"
+				+ "Credits: Who worked on 11C Plugin"
+				+ "GMS: Switches your gamemode to survival"
+				+ "GMSP: Switches your gamemode to spectator"
+				+ "GMC: Switches your gamemode to creative"
 				+ "GMAD: Switches your gamemode to adventure");
 			
 		return true;
 	} else {
-		p.sendMessage("About: Information of 11C's Plugin\r\n"
-				+ "Fly: Allow Flight\r\n"
-				+ "CHelp: Information of 11C's Commands\r\n"
-				+ "Website: Link to 11C's Official Website\r\n"
-				+ "Discord: Link to 11C's Official Website\r\n"
-				+ "Credits: Who worked on 11C Plugin \r\n"
-				+ "GMS: Switches your gamemode to survival \r\n"
-				+ "GMSP: Switches your gamemode to spectator \r\n"
-				+ "GMC: Switches your gamemode to creative \r\n"
+		p.sendMessage("About: Information of 11C's Plugin"
+				+ "Fly: Allow Flight"
+				+ "CHelp: Information of 11C's Commands"
+				+ "Website: Link to 11C's Official Website"
+				+ "Discord: Link to 11C's Official Discord"
+				+ "Credits: Who worked on 11C Plugin"
+				+ "GMS: Switches your gamemode to survival"
+				+ "GMSP: Switches your gamemode to spectator"
+				+ "GMC: Switches your gamemode to creative"
 				+ "GMAD: Switches your gamemode to adventure");
 	}
 	return false;

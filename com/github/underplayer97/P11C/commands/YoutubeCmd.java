@@ -20,7 +20,7 @@ public class YoutubeCmd implements CommandExecutor{
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (!(sender instanceof Player)){
-			sender.sendMessage("");
+			sender.sendMessage("&4The official youtube is: &5https://www.youtube.com/channel/UCnqhHNB_aG58RqkeCxFfA9w/");
 			return true;
 		}
 			
@@ -29,11 +29,11 @@ public class YoutubeCmd implements CommandExecutor{
 	Player p = (Player) sender;
 		
 	if (p.hasPermission("info.use")) {
-		p.sendMessage("");
+		p.sendMessage("&4The official youtube is: &5https://www.youtube.com/channel/UCnqhHNB_aG58RqkeCxFfA9w/");
 			
 		return true;
 	} else {
-		p.sendMessage("");
+		p.sendMessage("&4The official youtube is: &5https://www.youtube.com/channel/UCnqhHNB_aG58RqkeCxFfA9w/");
 	}
 	return false;
 		

@@ -20,7 +20,7 @@ public class WebsiteCmd implements CommandExecutor{
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (!(sender instanceof Player)){
-			sender.sendMessage("Link to website: https://11c.org/");
+			sender.sendMessage("&4Link to website: &5https://11c.org/");
 			return true;
 		}
 			
@@ -29,11 +29,11 @@ public class WebsiteCmd implements CommandExecutor{
 	Player p = (Player) sender;
 		
 	if (p.hasPermission("P11C.Web")) {
-		p.sendMessage("Link to website: https://11c.org/");
+		p.sendMessage("&4Link to website: &5https://11c.org/");
 			
 		return true;
 	} else {
-		p.sendMessage("Link to website: https://11c.org/");
+		p.sendMessage("&4Link to website: &5https://11c.org/");
 	}
 	return false;
 		

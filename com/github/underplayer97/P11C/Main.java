@@ -1,5 +1,8 @@
 package com.github.underplayer97.P11C;
 
+import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.github.underplayer97.P11C.Listeners.JoinListener;
@@ -11,14 +14,33 @@ import com.github.underplayer97.P11C.commands.GmadCmd;
 import com.github.underplayer97.P11C.commands.GmcCmd;
 import com.github.underplayer97.P11C.commands.GmsCmd;
 import com.github.underplayer97.P11C.commands.GmspCmd;
+import com.github.underplayer97.P11C.commands.HelpCmd;
 import com.github.underplayer97.P11C.commands.WebsiteCmd;
 
-public class Main extends JavaPlugin {
+public class Main extends JavaPlugin implements Listener {
+	
+	FileConfiguration config = getConfig();
 	
 	@Override
 	public void onEnable() {
 		
-		saveDefaultConfig();
+		Bukkit.broadcastMessage("   _   _    ____     ____    _                   _         "
+				              + "  / | / |  / ___|   |  _ \\ | |  _   _    __ _  (_)  _ __   "
+				              + "  | | | | | |       | |_) | | | | | | |  / _` | | | | '_ \\ "
+				              + "  | | | | | |___    |  __/  | | | |_| | | (_| | | | | | | |"
+				              + "  |_| |_| \\____|   |_|     |_| \\__,_| \\__, | |_| |_| |_|"
+				              + "                                         |___/             "
+				              + "                       ACTIVATED                           ");
+		
+		this.saveDefaultConfig();
+		
+		//Config
+		
+		saveConfig();
+		
+		getServer().getPluginManager().registerEvents(this, this);
+		
+		
 		
 		//Commands 
 		
@@ -34,6 +56,8 @@ public class Main extends JavaPlugin {
 		
 		new CreditsCmd(this);
 		
+		new HelpCmd(this);
+		
 		//Gamemode
 		
 		new GmsCmd(this);
@@ -48,5 +72,6 @@ public class Main extends JavaPlugin {
 		
 		new JoinListener(this);
 	}
+	
 
 }

@@ -18,7 +18,6 @@ public class FlyCmd implements CommandExecutor{
 		plugin.getCommand("fly").setExecutor(this);
 	}
 	
-	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {		
 		if(!(sender instanceof Player)) {
 			sender.sendMessage(Utils.chat(plugin.getConfig().getString("console_error_message")));
@@ -32,7 +31,7 @@ public class FlyCmd implements CommandExecutor{
 				
 				p.setAllowFlight(false);
 				p.setFlying(false);
-				p.sendMessage(Utils.chat(plugin.getConfig().getString("FlyCmd.fly_deactive")));
+				p.sendMessage(Utils.chat(plugin.getConfig().getString("FlyCmd.fly_deactived")));
 				return true;
 				
 			} else {
