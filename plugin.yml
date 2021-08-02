@@ -1,38 +1,95 @@
-name: 11C Plugin
-version: 0.5.0
-author: AGod Plays, Under, 11CDevTeam
 main: com.github.underplayer97.P11C.Main
-description: The official 11C plugin!
-
-commands:
-  about:
-   aliases: [abt]
-   description: Information of the 11C plugin
-   
-  fly:
-   description: Allow Flight
-
-  website:
-   description: Link to 11C's Official Website
- 
-  CHelp:
-   aliases: [ch]
-   description: Information of the 11C's Commands
-
-  credits:
-   description: Who worked on 11C Plugin
-
-  discord:
-   description: 11C's Official Discord
-   
-  gms:
-   description: Switches your gamemode to survival
-
-  gmsp:
-   description: Switches your gamemode to spectator
-   
-  gmc:
-   description: Switches your gamemode to creative
-
-  gmad:
-   description: Switches your gamemode to adventure
+name: 11C-Plugin
+version: '0.6.4'
+description: 11C's Official Plugin
+load: POSTWORLD
+author: 11C Development team and 11C Java Development team
+website: https://11c.org/
+prefix: 11C-Plugin
+depend: []
+softdepend: []
+loadbefore: []
+permisions:
+   P11C.Hub:
+      description: Teleports you to the Hub of the server
+      default: true
+   P11C.about:
+      description: Information about the plugin.
+      default: true
+   P11C.credits:
+      description: Information of who made the plugin.   
+      default: true
+   P11C.discord:
+      description: Join the Official Discord!                    
+      default: true
+   P11C.fly:
+      description: Be able to fly!
+      default: op
+   P11C.GMAD:
+      description: Change gamemode to adventure.
+      default: op
+   P11C.GMC:
+      description: Change gamemode to creative.
+      default: op
+   P11C.GMS:
+      description: Change gamemode to survival.
+      default: op
+   P11C.GMSP:
+      description: Change gamemode to spectator.
+      default: op
+   P11C.help:
+      description: Information of 11C's commands.
+      default: true
+   P11C.Web:
+      description: Information of the website.
+      default: true
+   P11C.youtube:
+      description: 11C's Official Youtube
+      default: true
+commands: 
+   youtube:
+      description: 11C's Official Youtube
+      permission: P11C.youtube
+      useage: /youtube 
+   about:
+      description: Information about the plugin.
+      permission: P11C.about
+      useage: /about
+   credits:
+      description: Information of who made the plugin.
+      permission: P11C.credits
+      useage: /credits
+   discord:
+      description: Join the Official Discord! 
+      permission: P11C.discord
+      useage: /discord
+   fly:
+      description: Be able to fly! 
+      permission: P11C.fly
+      useage: /fly
+   gmad:
+      description: Change gamemode to adventure. 
+      permission: P11C.GMAD
+      useage: /gmad
+   gmc:
+      description: Change gamemode to creative. 
+      permission: P11C.GMC
+      useage: /gmc 
+   gms:
+      description: Change gamemode to survival. 
+      permission: P11C.GMS
+      useage: /gms
+   gmsp:
+      description: Change gamemode to spectator.
+      permission: P11C.GMSP
+      useage: /gmsp   
+   chelp:
+      description: Information of 11C's commands. 
+      permission: P11C.help
+      useage: /chelp
+   website:
+      description: Information of the website. 
+      permission: P11C.Web
+      useage: /website  
+         
+            

@@ -1,22 +1,31 @@
+console_error_message: '&8[&c*&8] &cYou are unable to execute this command!'
+no_perm_error: '&8[&c*&8] &cYou are unable to execute this command!'
 
-#Fail System
-
-console_error_message: '&8[&c*&8] &cYou are unable to execute these commands!'
-
-no_perm_error: '&cYou do not have the permission to execute this command!'
-
-################################################################################
-
+#Fly Command
+FlyCmd:
+   fly_active: '&8[&a*&8] &7You have &aenabled &7fly!'
+   fly_deactived: '&8[&a*&8] &7You have &cdisabled &7fly!'
+   
 #Join System
 
 firstjoin_message: '&a<player> &7has joined the server for the first time!'
-
 join_message: '&e<player> &7has joined the server!'
-################################################################################
 
-#Fly System
+#Website
+WebsiteCmd:
+   website: '&4Link to website: &5https://11c.org/'
 
-FlyCmd:
-  fly_active: '&8[&a*&8] &7You have &aenabled &7flight!'
-  fly_deactive: '&8[&c*&8] &7You have &cdisabled &7flight!'
+#Youtube
+YoutubeCmd:
+   youtube: '&4The official youtube is: &5https://www.youtube.com/channel/UCnqhHNB_aG58RqkeCxFfA9w/'
    
+#Leave System
+LeaveListener:
+   leave_event: '&a<player> &7has left the server.'
+   
+#Gamemode System
+GmSys:
+   c: '&8[&a*&8] &7You have &aentered &7Creative mode!'
+   s: '&8[&a*&8] &7You have &aentered &7Survival mode!'
+   sp: '&8[&a*&8] &7You have &aentered &7Spectator mode!'
+   ad: '&8[&a*&8] &7You have &aentered &7Adventure mode!'
