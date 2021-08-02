@@ -27,13 +27,13 @@ public class Main extends JavaPlugin implements Listener {
 	@Override
 	public void onEnable() {
 		
-		Bukkit.broadcastMessage("   _   _    ____     ____    _                   _         "
-				              + "  / | / |  / ___|   |  _ \\ | |  _   _    __ _  (_)  _ __   "
-				              + "  | | | | | |       | |_) | | | | | | |  / _` | | | | '_ \\ "
-				              + "  | | | | | |___    |  __/  | | | |_| | | (_| | | | | | | |"
-				              + "  |_| |_| \\____|   |_|     |_| \\__,_| \\__, | |_| |_| |_|"
-				              + "                                         |___/             "
-				              + "                       ACTIVATED                           ");
+		Bukkit.broadcastMessage("   _   _    ____     ____    _                   _        \r\n "
+				              + "  / | / |  / ___|   |  _ \\ | |  _   _    __ _  (_)  _ __   \r\n"
+				              + "  | | | | | |       | |_) | | | | | | |  / _` | | | | '_ \\ \r\n"
+				              + "  | | | | | |___    |  __/  | | | |_| | | (_| | | | | | | | \r\n"
+				              + "  |_| |_| \\____|   |_|     |_| \\__,_| \\__, | |_| |_| |_| \r\n"
+				              + "                                         |___/              \r\n"
+				              + "                       ACTIVATED                            \r\n");
 		
 		this.saveDefaultConfig();
 		

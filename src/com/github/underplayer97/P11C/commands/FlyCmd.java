@@ -1,5 +1,7 @@
 package com.github.underplayer97.P11C.commands;
 
+import java.util.ArrayList;
+
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -9,6 +11,9 @@ import com.github.underplayer97.P11C.Main;
 import com.github.underplayer97.P11C.utils.Utils;
 
 public class FlyCmd implements CommandExecutor{
+	
+	@SuppressWarnings("unused")
+	private ArrayList<Player> flying_players = new ArrayList<>();
 	
 	private Main plugin; 
 	
@@ -27,17 +32,15 @@ public class FlyCmd implements CommandExecutor{
 		Player p = (Player) sender;
 		
 		if (p.hasPermission("P11C.fly")) {
-			if (p.isFlying()) {
-				
+			if (flying_players.contains(p)) {
+				flying_players.remove(p);
 				p.setAllowFlight(false);
-				p.setFlying(false);
 				p.sendMessage(Utils.chat(plugin.getConfig().getString("FlyCmd.fly_deactived")));
-				return true;
 				
-			} else {
 				
+			} else if(!flying_players.contains(p)) {
+				flying_players.add(p);
 				p.setFlying(true);
-				p.setAllowFlight(true);
 				p.sendMessage(Utils.chat(plugin.getConfig().getString("FlyCmd.fly_active")));
 				
 			}} else {
