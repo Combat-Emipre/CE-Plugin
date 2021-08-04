@@ -32,7 +32,7 @@ GmSys:
 
 #About Command   
 AboutCmd:
-   about: "&5Plugin Name: &6c11C Plugin\n &5Plugin Version: &60.7.1\n Hope you have a fun time!"
+   about: "&5Plugin Name: &6c11C Plugin\n &5Plugin Version: &60.9.0\n Hope you have a fun time!"
    
 #Help Command
 HelpCmd:
