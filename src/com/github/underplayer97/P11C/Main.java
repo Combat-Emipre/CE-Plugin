@@ -26,14 +26,14 @@ public class Main extends JavaPlugin implements Listener {
 	
 	@Override
 	public void onEnable() {
-		
-		Bukkit.broadcastMessage("   _   _    ____     ____    _                   _        \r\n "
-				              + "  / | / |  / ___|   |  _ \\ | |  _   _    __ _  (_)  _ __   \r\n"
-				              + "  | | | | | |       | |_) | | | | | | |  / _` | | | | '_ \\ \r\n"
-				              + "  | | | | | |___    |  __/  | | | |_| | | (_| | | | | | | | \r\n"
-				              + "  |_| |_| \\____|   |_|     |_| \\__,_| \\__, | |_| |_| |_| \r\n"
-				              + "                                         |___/              \r\n"
-				              + "                       ACTIVATED                            \r\n");
+	
+		Bukkit.broadcastMessage("   _   _    ____     ____    _                   _        \n "
+				              + "  / | / |  / ___|   |  _ \\ | |  _   _    __ _  (_)  _ __   \n"
+				              + "  | | | | | |       | |_) | | | | | | |  / _` | | | | '_ \\ \n"
+				              + "  | | | | | |___    |  __/  | | | |_| | | (_| | | | | | | | \n"
+				              + "  |_| |_| \\____|   |_|     |_| \\__,_| \\__, | |_| |_| |_| \n"
+				              + "                                         |___/              \n"
+				              + "                       ACTIVATED                            \n");
 		
 		this.saveDefaultConfig();
 		

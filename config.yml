@@ -29,3 +29,11 @@ GmSys:
    s: '&8[&a*&8] &7You have &aentered &7Survival mode!'
    sp: '&8[&a*&8] &7You have &aentered &7Spectator mode!'
    ad: '&8[&a*&8] &7You have &aentered &7Adventure mode!'
+
+#About Command   
+AboutCmd:
+   about: "&5Plugin Name: &6c11C Plugin\n &5Plugin Version: &60.7.1\n Hope you have a fun time!"
+   
+#Help Command
+HelpCmd:
+   help: "&6About: &fInformation of 11C's Plugin \n  &6Fly: &fAllow Flight \n &6CHelp: &fInformation of 11C's Commands \n &6Website: &fLink to 11C's Official Website\n &6Discord: &fLink to 11C's Official Discord \n &6Credits: &fWho worked on 11C Plugin \n &6Youtube: &f11C's Official Youtube \n &6Hub: &fTeleports you to the server Hub \n &6GMS: &fSwitches your gamemode to survival \n &6GMSP: &fSwitches your gamemode to spectator \n &6GMC: &fSwitches your gamemode to creative \n &6GMAD: &fSwitches your gamemode to adventure"

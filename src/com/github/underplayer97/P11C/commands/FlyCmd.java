@@ -40,7 +40,7 @@ public class FlyCmd implements CommandExecutor{
 				
 			} else if(!flying_players.contains(p)) {
 				flying_players.add(p);
-				p.setFlying(true);
+				p.setAllowFlight(true);
 				p.sendMessage(Utils.chat(plugin.getConfig().getString("FlyCmd.fly_active")));
 				
 			}} else {
