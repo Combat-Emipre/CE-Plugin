@@ -1,11 +1,11 @@
-main: com.github.underplayer97.P11C.Main
+main: com.github.underplayer97.CE.Main
 name: 11C-Plugin
-version: '0.6.4'
-description: 11C's Official Plugin
+version: '0.1.0'
+description: Combat Empire's Official Plugin
 load: POSTWORLD
-author: 11C Development team and 11C Java Development team
-website: https://11c.org/
-prefix: 11C-Plugin
+author: Combat Empire Development team and Combat Empire Java Development team
+website: NONE
+prefix: CE-Plugin
 depend: []
 softdepend: []
 loadbefore: []
