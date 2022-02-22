@@ -1,4 +1,4 @@
-package com.github.underplayer97.P11C.commands;
+package com.github.underplayer97.CE.commands;
 
 import java.util.ArrayList;
 
@@ -7,8 +7,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.github.underplayer97.P11C.Main;
-import com.github.underplayer97.P11C.utils.Utils;
+import com.github.underplayer97.CE.Main;
+import com.github.underplayer97.CE.utils.Utils;
 
 public class FlyCmd implements CommandExecutor{
 	
@@ -31,7 +31,7 @@ public class FlyCmd implements CommandExecutor{
 		
 		Player p = (Player) sender;
 		
-		if (p.hasPermission("P11C.fly")) {
+		if (p.hasPermission("CE.fly")) {
 			if (flying_players.contains(p)) {
 				flying_players.remove(p);
 				p.setAllowFlight(false);
