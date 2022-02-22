@@ -1,4 +1,4 @@
-package com.github.underplayer97.P11C.commands;
+package com.github.underplayer97.CE.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -6,8 +6,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.github.underplayer97.P11C.Main;
-import com.github.underplayer97.P11C.utils.Utils;
+import com.github.underplayer97.CE.Main;
+import com.github.underplayer97.CE.utils.Utils;
 
 public class HubCmd implements CommandExecutor{
 	
@@ -28,7 +28,7 @@ public class HubCmd implements CommandExecutor{
 		
 		Player p = (Player) sender;
 		
-		if (p.hasPermission("P11C.Hub")) {
+		if (p.hasPermission("CE.Hub")) {
 			 {
 				 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "server lobby");
 				return true;
