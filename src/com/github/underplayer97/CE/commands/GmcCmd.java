@@ -1,4 +1,4 @@
-package com.github.underplayer97.P11C.commands;
+package com.github.underplayer97.CE.commands;
 
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
@@ -6,8 +6,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.github.underplayer97.P11C.Main;
-import com.github.underplayer97.P11C.utils.Utils;
+import com.github.underplayer97.CE.Main;
+import com.github.underplayer97.CE.utils.Utils;
 
 public class GmcCmd implements CommandExecutor{
 	
@@ -28,7 +28,7 @@ public class GmcCmd implements CommandExecutor{
 		
 		Player p = (Player) sender;
 		
-		if (p.hasPermission("P11C.GMC")) {
+		if (p.hasPermission("CE.GMC")) {
 			 {
 				 p.setGameMode(GameMode.CREATIVE);
 				 sender.sendMessage(Utils.chat(plugin.getConfig().getString("GmSys.c")));
