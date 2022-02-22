@@ -1,4 +1,4 @@
-package com.github.underplayer97.P11C.utils;
+package com.github.underplayer97.CE.utils;
 
 import org.bukkit.ChatColor;
 
