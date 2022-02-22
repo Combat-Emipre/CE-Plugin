@@ -1,6 +1,6 @@
-package com.github.underplayer97.P11C.commands;
+package com.github.underplayer97.CE.commands;
 
-import com.github.underplayer97.P11C.Main;
+import com.github.underplayer97.CE.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -28,7 +28,7 @@ public class WebsiteCmd implements CommandExecutor{
 	
 	Player p = (Player) sender;
 		
-	if (p.hasPermission("P11C.Web")) {
+	if (p.hasPermission("CE.Web")) {
 		p.sendMessage("WebsiteCmd.website");
 			
 		return true;
