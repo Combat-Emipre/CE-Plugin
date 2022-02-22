@@ -1,6 +1,6 @@
-package com.github.underplayer97.P11C.commands;
+package com.github.underplayer97.CE.commands;
 
-import com.github.underplayer97.P11C.Main;
+import com.github.underplayer97.CE.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -28,12 +28,12 @@ public class CreditsCmd implements CommandExecutor{
 	
 	Player p = (Player) sender;
 		
-	if (p.hasPermission("P11C.credits")) {
-		p.sendMessage("Credits: 11C Development team, 11C Java Development team");
+	if (p.hasPermission("CE.credits")) {
+		p.sendMessage("Credits: Combat Empire Development team, Combat Empire Java Development team");
 			
 		return true;
 	} else {
-		p.sendMessage("Credits: 11C Development team, 11C Java Development team");
+		p.sendMessage("Credits: Combat Empire Development team, Combat Empire Java Development team");
 	}
 	return false;
 		
