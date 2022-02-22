@@ -1,7 +1,7 @@
-package com.github.underplayer97.P11C.commands;
+package com.github.underplayer97.CE.commands;
 
-import com.github.underplayer97.P11C.Main;
-import com.github.underplayer97.P11C.utils.Utils;
+import com.github.underplayer97.CE.Main;
+import com.github.underplayer97.CE.utils.Utils;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -30,7 +30,7 @@ public class HelpCmd implements CommandExecutor{
 	
 	Player p = (Player) sender;
 		
-	if (p.hasPermission("P11C.help")) {
+	if (p.hasPermission("CE.help")) {
 		p.sendMessage(Utils.chat(plugin.getConfig().getString("HelpCmd.help")));
 			
 		return true;
