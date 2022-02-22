@@ -1,4 +1,4 @@
-package com.github.underplayer97.P11C.Listeners;
+package com.github.underplayer97.CE.Listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -6,8 +6,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 
-import com.github.underplayer97.P11C.Main;
-import com.github.underplayer97.P11C.utils.Utils;
+import com.github.underplayer97.CE.Main;
+import com.github.underplayer97.CE.utils.Utils;
 
 public class DeathListeners implements Listener{
 	
