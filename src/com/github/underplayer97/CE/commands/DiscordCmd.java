@@ -1,6 +1,6 @@
-package com.github.underplayer97.P11C.commands;
+package com.github.underplayer97.CE.commands;
 
-import com.github.underplayer97.P11C.Main;
+import com.github.underplayer97.CE.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -20,7 +20,7 @@ public class DiscordCmd implements CommandExecutor{
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (!(sender instanceof Player)){
-			sender.sendMessage("11C's Official Discord: https://discord.gg/VXDza8eUMZ");
+			sender.sendMessage("TBA");
 			return true;
 		}
 			
@@ -28,12 +28,12 @@ public class DiscordCmd implements CommandExecutor{
 	
 	Player p = (Player) sender;
 		
-	if (p.hasPermission("P11C.discord")) {
-		p.sendMessage("11C's Official Discord: https://discord.gg/VXDza8eUMZ");
+	if (p.hasPermission("CE.discord")) {
+		p.sendMessage("TBA");
 			
 		return true;
 	} else {
-		p.sendMessage("11C's Official Discord: https://discord.gg/VXDza8eUMZ");
+		p.sendMessage("TBA");
 	}
 	return false;
 		
