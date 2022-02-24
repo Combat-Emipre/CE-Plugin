@@ -43,14 +43,7 @@ permisions:
    P11C.Web:
       description: Information of the website.
       default: true
-   P11C.youtube:
-      description: 11C's Official Youtube
-      default: true
-commands: 
-   youtube:
-      description: 11C's Official Youtube
-      permission: P11C.youtube
-      useage: /youtube 
+commands:  
    about:
       description: Information about the plugin.
       permission: P11C.about
