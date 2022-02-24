@@ -35,7 +35,7 @@ public class AboutCmd implements CommandExecutor{
 			
 		return true;
 	} else {
-		p.sendMessage(Utils.chat(plugin.getConfig().getString("YoutubeCmd.youtube")));
+		p.sendMessage(Utils.chat(plugin.getConfig().getString("AboutCmd.about")));
 	}
 	return false;
 		
