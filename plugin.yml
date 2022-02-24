@@ -1,5 +1,5 @@
 main: com.github.underplayer97.CE.Main
-name: 11C-Plugin
+name: CE-Plugin
 version: '0.1.0'
 description: Combat Empire's Official Plugin
 load: POSTWORLD
@@ -10,79 +10,79 @@ depend: []
 softdepend: []
 loadbefore: []
 permisions:
-   P11C.Hub:
+   CE.Hub:
       description: Teleports you to the Hub of the server
       default: true
-   P11C.about:
+   CE.about:
       description: Information about the plugin.
       default: true
-   P11C.credits:
+   CE.credits:
       description: Information of who made the plugin.   
       default: true
-   P11C.discord:
+   CE.discord:
       description: Join the Official Discord!                    
       default: true
-   P11C.fly:
+   CE.fly:
       description: Be able to fly!
       default: op
-   P11C.GMAD:
+   CE.GMAD:
       description: Change gamemode to adventure.
       default: op
-   P11C.GMC:
+   CE.GMC:
       description: Change gamemode to creative.
       default: op
-   P11C.GMS:
+   CE.GMS:
       description: Change gamemode to survival.
       default: op
-   P11C.GMSP:
+   CE.GMSP:
       description: Change gamemode to spectator.
       default: op
-   P11C.help:
-      description: Information of 11C's commands.
+   CE.help:
+      description: Information of Combat Empire's commands.
       default: true
-   P11C.Web:
+   CE.Web:
       description: Information of the website.
       default: true
 commands:  
    about:
       description: Information about the plugin.
-      permission: P11C.about
+      permission: CE.about
       useage: /about
    credits:
       description: Information of who made the plugin.
-      permission: P11C.credits
+      permission: CE.credits
       useage: /credits
    discord:
       description: Join the Official Discord! 
-      permission: P11C.discord
+      permission: CE.discord
       useage: /discord
    fly:
       description: Be able to fly! 
-      permission: P11C.fly
+      permission: CE.fly
       useage: /fly
    gmad:
       description: Change gamemode to adventure. 
-      permission: P11C.GMAD
+      permission: Ce.GMAD
       useage: /gmad
    gmc:
       description: Change gamemode to creative. 
-      permission: P11C.GMC
+      permission: CE.GMC
       useage: /gmc 
    gms:
       description: Change gamemode to survival. 
-      permission: P11C.GMS
+      permission: CE.GMS
       useage: /gms
    gmsp:
       description: Change gamemode to spectator.
-      permission: P11C.GMSP
+      permission: CE.GMSP
       useage: /gmsp   
    chelp:
-      description: Information of 11C's commands. 
-      permission: P11C.help
+      description: Information of Combat Empire's commands. 
+      permission: CE.help
       useage: /chelp
    website:
       description: Information of the website. 
-      permission: P11C.Web
+      permission: CE.Web
       useage: /website  
          
             
