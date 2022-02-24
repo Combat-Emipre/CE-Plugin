@@ -17,7 +17,6 @@ import com.github.underplayer97.CE.commands.GmsCmd;
 import com.github.underplayer97.CE.commands.GmspCmd;
 import com.github.underplayer97.CE.commands.HelpCmd;
 import com.github.underplayer97.CE.commands.WebsiteCmd;
-import com.github.underplayer97.CE.commands.YoutubeCmd;
 import com.github.underplayer97.CE.commands.HubCmd;
 
 public class Main extends JavaPlugin implements Listener {
@@ -52,8 +51,6 @@ public class Main extends JavaPlugin implements Listener {
 		new CreditsCmd(this);
 		
 		new HelpCmd(this);
-		
-		new YoutubeCmd(this);
 		
 		new HubCmd(this);
 		
