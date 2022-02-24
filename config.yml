@@ -13,7 +13,7 @@ join_message: '&e<player> &7has joined the server!'
 
 #Website
 WebsiteCmd:
-   website: '&4Link to website: &5https://11c.org/'
+   website: '&4Link to website: &5TBA'
    
 #Leave System
 LeaveListener:
@@ -28,8 +28,8 @@ GmSys:
 
 #About Command   
 AboutCmd:
-   about: "&5Plugin Name: &6c11C Plugin\n &5Plugin Version: &60.9.0\n Hope you have a fun time!"
+   about: "&5Plugin Name: &6cCombat Empire Plugin\n &5Plugin Version: &60.1.0\n Hope you have a fun time!"
    
 #Help Command
 HelpCmd:
-   help: "&6About: &4Information of 11C's Plugin \n  &6Fly: &4Allow Flight \n &6CHelp: &4Information of 11C's Commands \n &6Website: &4Link to 11C's Official Website\n &6Discord: &4Link to 11C's Official Discord \n &6Credits: &4Who worked on 11C Plugin \n &6Youtube: &411C's Official Youtube \n &6Hub: &4Teleports you to the server Hub \n &6GMS: &4Switches your gamemode to survival \n &6GMSP: &4Switches your gamemode to spectator \n &6GMC: &4Switches your gamemode to creative \n &6GMAD: &4Switches your gamemode to adventure"
+   help: "&6About: &4Information of Combat Empire's Plugin \n  &6Fly: &4Allow Flight \n &6CHelp: &4Information of Combat Empire's Commands \n &6Website: &4Link to Combate Empire's Official Website\n &6Discord: &4Link to Combat Empire's Official Discord \n &6Credits: &4Who worked on Combat Empire Plugin \n &6Hub: &4Teleports you to the server Hub \n &6GMS: &4Switches your gamemode to survival \n &6GMSP: &4Switches your gamemode to spectator \n &6GMC: &4Switches your gamemode to creative \n &6GMAD: &4Switches your gamemode to adventure"
