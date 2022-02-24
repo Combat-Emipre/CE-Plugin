@@ -20,7 +20,7 @@ public class CreditsCmd implements CommandExecutor{
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (!(sender instanceof Player)){
-			sender.sendMessage("Credits: 11C Development team, 11C Java Development team");
+			sender.sendMessage("Credits: Combat Empire Development team, Combat Empire Java Development team");
 			return true;
 		}
 			
